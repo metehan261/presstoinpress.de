@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>press.to.impress.de — Handgemachte Press-On Nails</title>
+  <meta name="description" content="Handgemachte Press-On Nails mit 3D Nail Art und Salon-Look. Entdecke die ersten Designs von press.to.impress.de — gegründet von Sümeyye.">
+
+  <meta property="og:title" content="press.to.impress.de — Handgemachte Press-On Nails">
+  <meta property="og:description" content="Handgemachte Press-On Nails, 3D Nail Art und Salon-Look. Bald mehr.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://presstoimpress.de">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="mobile-close" onclick="closeMobileNav()" aria-label="Menü schließen">✕</button>
+    <a href="#designs" onclick="closeMobileNav()">Designs</a>
+    <a href="#gallery" onclick="closeMobileNav()">Galerie</a>
+    <a href="#all-photos" onclick="closeMobileNav()">Alle Fotos</a>
+    <a href="#story" onclick="closeMobileNav()">Über uns</a>
+    <a href="#why" onclick="closeMobileNav()">Warum Press-Ons?</a>
+    <a href="#contact" onclick="closeMobileNav()">Kontakt</a>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#top" class="nav-logo">press.to<span>✦</span>impress.de</a>
+
+    <ul class="nav-links">
+      <li><a href="#designs">Designs</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#all-photos">Alle Fotos</a></li>
+      <li><a href="#story">Über uns</a></li>
+      <li><a href="#why">Warum Press-Ons?</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <span class="coming-badge">coming soon</span>
+      <button class="hamburger" onclick="openMobileNav()" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">✦ Handmade Press-On Nails ✦</p>
+        <h1>Deine Nägel.<br><em>Dein Statement.</em></h1>
+        <p class="hero-sub">
+          Handgemachte Press-On Nails mit 3D Nail Art und Salon-Look — individuell, kreativ und wiederverwendbar.
+        </p>
+        <a href="#gallery" class="btn-primary"><span>Designs entdecken</span></a>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- DESIGN CATEGORIES -->
+    <section class="collections" id="designs">
+      <div class="collections-header reveal">
+        <p class="section-label">✦ Für jeden Look</p>
+        <h2 class="section-title">Unsere <em>Designwelten</em></h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">
+          Von clean und elegant bis auffällig und verspielt — hier entsteht nach und nach unsere erste Kollektion.
+        </p>
+      </div>
+
+      <div class="collections-grid">
+        <article class="col-card reveal reveal-delay-1">
+          <img class="col-card-img" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=85" alt="Elegantes Nail Design">
+          <div class="col-card-overlay">
+            <span class="col-label">Collection 01</span>
+            <h3 class="col-name">Soft &amp;<br>Elegant</h3>
+            <a href="#all-photos" class="col-link">Alle Designs →</a>
+          </div>
+        </article>
+
+        <article class="col-card reveal reveal-delay-2">
+          <img class="col-card-img" src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=85" alt="3D Nail Art Design">
+          <div class="col-card-overlay">
+            <span class="col-label">Collection 02</span>
+            <h3 class="col-name">3D &amp;<br>Statement</h3>
+            <a href="#all-photos" class="col-link">Alle Designs →</a>
+          </div>
+        </article>
+
+        <article class="col-card reveal reveal-delay-3">
+          <img class="col-card-img" src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=900&q=85" alt="Verspieltes Press-On Nail Design">
+          <div class="col-card-overlay">
+            <span class="col-label">Collection 03</span>
+            <h3 class="col-name">Cute &amp;<br>Playful</h3>
+            <a href="#all-photos" class="col-link">Alle Designs →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-header reveal">
+        <p class="section-label">✦ Erste Designs</p>
+        <h2 class="section-title">Nail <em>Gallery</em></h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">
+          Ein kleiner Einblick in den Stil von press.to.impress.de. Die Galerie wächst mit jedem neuen Set.
+        </p>
+      </div>
+
+      <div class="nail-grid">
+        <button class="nail-card reveal reveal-delay-1" onclick="openLightbox(this)" aria-label="Design 01 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=85" alt="Press-On Nail Design in Nude">
+          <span class="nail-card-info">
+            <span class="nail-number">01</span>
+            <strong>Soft Nude</strong>
+            <small>clean • glossy • elegant</small>
+          </span>
+        </button>
+
+        <button class="nail-card reveal reveal-delay-2" onclick="openLightbox(this)" aria-label="Design 02 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=85" alt="Press-On Nails mit Nail Art">
+          <span class="nail-card-info">
+            <span class="nail-number">02</span>
+            <strong>Statement Art</strong>
+            <small>detail • 3D • creative</small>
+          </span>
+        </button>
+
+        <button class="nail-card reveal reveal-delay-3" onclick="openLightbox(this)" aria-label="Design 03 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=900&q=85" alt="Verspieltes Press-On Nail Design">
+          <span class="nail-card-info">
+            <span class="nail-number">03</span>
+            <strong>Sweet Detail</strong>
+            <small>cute • playful • glossy</small>
+          </span>
+        </button>
+
+        <button class="nail-card reveal reveal-delay-1" onclick="openLightbox(this)" aria-label="Design 04 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=900&q=85" alt="Klassisches Nail Design">
+          <span class="nail-card-info">
+            <span class="nail-number">04</span>
+            <strong>Classic Glow</strong>
+            <small>minimal • soft • timeless</small>
+          </span>
+        </button>
+
+        <button class="nail-card reveal reveal-delay-2" onclick="openLightbox(this)" aria-label="Design 05 vergrößern">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=900&q=85" alt="Pinkes Press-On Nail Design">
+          <span class="nail-card-info">
+            <span class="nail-number">05</span>
+            <strong>Pink Mood</strong>
+            <small>feminine • glossy • soft</small>
+          </span>
+        </button>
+
+        <button class="nail-card reveal reveal-delay-3" onclick="openLightbox(this)" aria-label="Design 06 vergrößern">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900&q=85" alt="Detailreiches Nail Art Design">
+          <span class="nail-card-info">
+            <span class="nail-number">06</span>
+            <strong>Detail Love</strong>
+            <small>art • detail • handmade</small>
+          </span>
+        </button>
+      </div>
+
+      <div class="gallery-more reveal">
+        <p>Du möchtest mehr sehen?</p>
+        <a href="#all-photos" class="btn-outline">Alle Fotos ansehen</a>
+      </div>
+    </section>
+
+
+    <!-- ALL PHOTOS -->
+    <section class="all-photos-section" id="all-photos">
+      <div class="gallery-header reveal">
+        <p class="section-label">✦ Alle Designs</p>
+        <h2 class="section-title">Alle <em>Fotos</em></h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">
+          Hier findest du die komplette Galerie. Die aktuellen Bilder sind Platzhalter und können später durch deine eigenen Nail-Sets ersetzt werden.
+        </p>
+      </div>
+
+      <div class="gallery-filter reveal">
+        <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="soft">Soft &amp; Elegant</button>
+        <button class="filter-btn" data-filter="3d">3D &amp; Statement</button>
+        <button class="filter-btn" data-filter="cute">Cute &amp; Playful</button>
+      </div>
+
+      <div class="full-gallery-grid">
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 01 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=85" alt="Press-On Nail Design 01" loading="lazy">
+          <span class="hidden-caption"><strong>Design 01</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 02 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=85" alt="Press-On Nail Design 02" loading="lazy">
+          <span class="hidden-caption"><strong>Design 02</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 03 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=900&q=85" alt="Press-On Nail Design 03" loading="lazy">
+          <span class="hidden-caption"><strong>Design 03</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 04 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=900&q=85" alt="Press-On Nail Design 04" loading="lazy">
+          <span class="hidden-caption"><strong>Design 04</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 05 vergrößern">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=900&q=85" alt="Press-On Nail Design 05" loading="lazy">
+          <span class="hidden-caption"><strong>Design 05</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 06 vergrößern">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900&q=85" alt="Press-On Nail Design 06" loading="lazy">
+          <span class="hidden-caption"><strong>Design 06</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 07 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=85" alt="Press-On Nail Design 07" loading="lazy">
+          <span class="hidden-caption"><strong>Design 07</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 08 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=85" alt="Press-On Nail Design 08" loading="lazy">
+          <span class="hidden-caption"><strong>Design 08</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 09 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=900&q=85" alt="Press-On Nail Design 09" loading="lazy">
+          <span class="hidden-caption"><strong>Design 09</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 10 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=900&q=85" alt="Press-On Nail Design 10" loading="lazy">
+          <span class="hidden-caption"><strong>Design 10</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 11 vergrößern">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=900&q=85" alt="Press-On Nail Design 11" loading="lazy">
+          <span class="hidden-caption"><strong>Design 11</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 12 vergrößern">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900&q=85" alt="Press-On Nail Design 12" loading="lazy">
+          <span class="hidden-caption"><strong>Design 12</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 13 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=85" alt="Press-On Nail Design 13" loading="lazy">
+          <span class="hidden-caption"><strong>Design 13</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 14 vergrößern">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=900&q=85" alt="Press-On Nail Design 14" loading="lazy">
+          <span class="hidden-caption"><strong>Design 14</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 15 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=85" alt="Press-On Nail Design 15" loading="lazy">
+          <span class="hidden-caption"><strong>Design 15</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 16 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=900&q=85" alt="Press-On Nail Design 16" loading="lazy">
+          <span class="hidden-caption"><strong>Design 16</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 17 vergrößern">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900&q=85" alt="Press-On Nail Design 17" loading="lazy">
+          <span class="hidden-caption"><strong>Design 17</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 18 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=900&q=85" alt="Press-On Nail Design 18" loading="lazy">
+          <span class="hidden-caption"><strong>Design 18</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 19 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=85" alt="Press-On Nail Design 19" loading="lazy">
+          <span class="hidden-caption"><strong>Design 19</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 20 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=85" alt="Press-On Nail Design 20" loading="lazy">
+          <span class="hidden-caption"><strong>Design 20</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 21 vergrößern">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=900&q=85" alt="Press-On Nail Design 21" loading="lazy">
+          <span class="hidden-caption"><strong>Design 21</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 22 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=900&q=85" alt="Press-On Nail Design 22" loading="lazy">
+          <span class="hidden-caption"><strong>Design 22</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 23 vergrößern">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900&q=85" alt="Press-On Nail Design 23" loading="lazy">
+          <span class="hidden-caption"><strong>Design 23</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 24 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=900&q=85" alt="Press-On Nail Design 24" loading="lazy">
+          <span class="hidden-caption"><strong>Design 24</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 25 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=85" alt="Press-On Nail Design 25" loading="lazy">
+          <span class="hidden-caption"><strong>Design 25</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 26 vergrößern">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=900&q=85" alt="Press-On Nail Design 26" loading="lazy">
+          <span class="hidden-caption"><strong>Design 26</strong><small>cute</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 27 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900&q=85" alt="Press-On Nail Design 27" loading="lazy">
+          <span class="hidden-caption"><strong>Design 27</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="soft" onclick="openLightbox(this)" aria-label="Design 28 vergrößern">
+          <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=900&q=85" alt="Press-On Nail Design 28" loading="lazy">
+          <span class="hidden-caption"><strong>Design 28</strong><small>soft</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="3d" onclick="openLightbox(this)" aria-label="Design 29 vergrößern">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900&q=85" alt="Press-On Nail Design 29" loading="lazy">
+          <span class="hidden-caption"><strong>Design 29</strong><small>3d</small></span>
+        </button>
+        <button class="full-gallery-item reveal" data-category="cute" onclick="openLightbox(this)" aria-label="Design 30 vergrößern">
+          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=900&q=85" alt="Press-On Nail Design 30" loading="lazy">
+          <span class="hidden-caption"><strong>Design 30</strong><small>cute</small></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story-section" id="story">
+      <div class="brand-story">
+        <div class="story-img-wrap reveal">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1000&q=85" alt="Handgemachte Press-On Nails">
+          <div class="story-img-accent"></div>
+        </div>
+
+        <div class="story-text reveal reveal-delay-2">
+          <p class="section-label">✦ Die Idee dahinter</p>
+          <h2 class="section-title">Salon-Look.<br><em>Handgemacht.</em></h2>
+          <div class="section-divider"></div>
+
+          <p>
+            press.to.impress.de entsteht aus der Idee, aufwendige Nail Art und den Look eines Nagelstudios mit der Flexibilität von Press-On Nails zu verbinden.
+          </p>
+
+          <blockquote>
+            „Jedes Set soll sich besonders anfühlen — nicht wie Massenware.“
+          </blockquote>
+
+          <p>
+            Die Designs werden von Sümeyye mit viel Liebe zum Detail entwickelt. Der Fokus liegt auf individuellen Looks, 3D Nail Art und einem hochwertigen Finish.
+          </p>
+
+          <p class="story-coming">
+            Aktuell befindet sich die Seite noch im Aufbau. Verkauf und Bestellungen starten zu einem späteren Zeitpunkt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="why-choose" id="why">
+      <div class="why-heading reveal">
+        <p class="section-label">✦ Das Konzept</p>
+        <h2 class="section-title light-title">Warum <em>Press-On Nails?</em></h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item reveal reveal-delay-1">
+          <span class="why-icon">✦</span>
+          <h4>Handgemacht</h4>
+          <p>Kein Massenprodukt: Die Sets entstehen mit Fokus auf Details, Form und Finish.</p>
+        </div>
+
+        <div class="why-item reveal reveal-delay-2">
+          <span class="why-icon">♡</span>
+          <h4>Individueller Look</h4>
+          <p>Von minimalistisch bis 3D Nail Art — Designs mit eigener Persönlichkeit.</p>
+        </div>
+
+        <div class="why-item reveal reveal-delay-3">
+          <span class="why-icon">↻</span>
+          <h4>Wiederverwendbar</h4>
+          <p>Bei sorgfältiger Anwendung können Press-On Nails mehrfach getragen werden.</p>
+        </div>
+
+        <div class="why-item reveal reveal-delay-4">
+          <span class="why-icon">⌁</span>
+          <h4>Salon-Vibe zuhause</h4>
+          <p>Ein gepflegter, aufwendiger Look ohne klassischen Nagelstudio-Termin.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM / SOCIAL -->
+    <section class="ig-strip">
+      <div class="ig-header reveal">
+        <p class="section-label">✦ Follow the journey</p>
+        <h2 class="section-title">Behind the <em>Nails</em></h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">
+          Neue Designs, Entstehungsprozesse und Updates werden zuerst auf Instagram geteilt.
+        </p>
+      </div>
+
+      <div class="ig-grid reveal">
+        <div class="ig-tile"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80" alt="Nail Inspiration"></div>
+        <div class="ig-tile"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=500&q=80" alt="Nail Art"></div>
+        <div class="ig-tile"><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=500&q=80" alt="Pink Nails"></div>
+        <div class="ig-tile"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=500&q=80" alt="Manicure Detail"></div>
+        <div class="ig-tile"><img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=500&q=80" alt="Nail Design"></div>
+        <div class="ig-tile"><img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?w=500&q=80" alt="Press-On Inspiration"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT / COMING SOON -->
+    <section class="contact" id="contact">
+      <p class="section-label">✦ press.to.impress.de</p>
+      <h2>Etwas Schönes<br><em>ist in Arbeit.</em></h2>
+      <p>
+        Die ersten Designs entstehen gerade. Bestellungen sind aktuell noch nicht möglich.<br>
+        Folge der Seite für Updates und den offiziellen Start.
+      </p>
+
+      <div class="contact-actions">
+        <a href="https://www.instagram.com/presstoimpress.de/" target="_blank" rel="noopener noreferrer" class="btn-primary"><span>Instagram</span></a>
+        <a href="#gallery" class="btn-outline-light">Galerie ansehen</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="nav-logo">press.to<span>✦</span>impress.de</a>
+        <p>Handgemachte Press-On Nails, 3D Nail Art und Salon-Look — mit Liebe gestaltet von Sümeyye.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Entdecken</h5>
+        <ul>
+          <li><a href="#designs">Designs</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#all-photos">Alle Fotos</a></li>
+          <li><a href="#story">Über uns</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Info</h5>
+        <ul>
+          <li><a href="#why">Warum Press-Ons?</a></li>
+          <li><a href="#contact">Coming Soon</a></li>
+          <li><a href="https://www.instagram.com/presstoimpress.de/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 presstoimpress.de</span>
+      <span>Founded by Sümeyye ♡</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)" aria-hidden="true">
+    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Bild schließen">✕</button>
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="">
+      <div class="lightbox-caption">
+        <strong id="lightboxTitle"></strong>
+        <span id="lightboxMeta"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
