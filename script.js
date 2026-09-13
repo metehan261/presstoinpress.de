@@ -110,7 +110,10 @@ if (contactForm) {
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    formStatus.textContent = "Sending...";
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    formStatus.textContent = "Mesajınız gönderiliyor...";
+    submitButton.disabled = true;
 
     emailjs
       .sendForm(
@@ -120,15 +123,18 @@ if (contactForm) {
       )
       .then(() => {
         formStatus.textContent =
-          "Thank you ♡ Your message has been sent.";
+          "Teşekkür ederiz ♡ Mesajınız başarıyla gönderildi.";
 
         contactForm.reset();
       })
       .catch((error) => {
-        console.error("EmailJS error:", error);
+        console.error("EmailJS hatası:", error);
 
         formStatus.textContent =
-          "Something went wrong. Please try again.";
+          "Mesaj gönderilemedi. Lütfen tekrar deneyin.";
+      })
+      .finally(() => {
+        submitButton.disabled = false;
       });
   });
 }
