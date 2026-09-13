@@ -102,3 +102,33 @@ filterButtons.forEach((button) => {
     });
   });
 });
+
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    formStatus.textContent = "Sending...";
+
+    emailjs
+      .sendForm(
+        "service_4o7nans",
+        "template_fn5iqto",
+        contactForm
+      )
+      .then(() => {
+        formStatus.textContent =
+          "Thank you ♡ Your message has been sent.";
+
+        contactForm.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+
+        formStatus.textContent =
+          "Something went wrong. Please try again.";
+      });
+  });
+}
